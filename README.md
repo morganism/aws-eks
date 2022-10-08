@@ -1,5 +1,7 @@
 # uses terraform to provision an EKS cluster
 
+[![GitHub Actions Demo](https://github.com/morganism/aws-eks/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/morganism/aws-eks/actions/workflows/github-actions-demo.yml)
+
 you need to have an IAM user with the appropriate permissions
 
 @TODO 
