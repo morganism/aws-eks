@@ -100,8 +100,8 @@ jobs:
 
     # deploy Kong Ingress controller
     - name: Deploy Kong Ingress Controller
-      run: deploy_kong_ingress_controller.sh
+      run: $GITHUB_WORKSPACE/deploy_kong_ingress_controller.sh
 
     # deploy Echo Service
     - name: Deploy Echo Service
-      run: deploy_echo_service.sh
+      run: $GITHUB_WORKSPACE/deploy_echo_service.sh
