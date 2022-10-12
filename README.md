@@ -2,6 +2,8 @@
 
 [![GitHub Actions Demo](https://github.com/morganism/aws-eks/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/morganism/aws-eks/actions/workflows/github-actions-demo.yml)
 
+[![Terraform](https://github.com/morganism/aws-eks/actions/workflows/terraform.yml/badge.svg)](https://github.com/morganism/aws-eks/actions/workflows/terraform.yml)
+
 # ASSUMPTIONS
 - an Amazon account
 - an IAM user with appropriate permissions
