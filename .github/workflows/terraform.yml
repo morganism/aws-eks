@@ -91,3 +91,11 @@ jobs:
     - name: Terraform Apply
       if: github.ref == 'refs/heads/$default-branch' && github.event_name == 'push'
       run: terraform apply -auto-approve -input=false
+
+    # deploy Kong Ingress controller
+    - name: Deploy Kong Ingress Controller
+      run: deploy_kong_ingress_controller.sh
+
+    # deploy Echo Service
+    - name: Deploy Echo Service
+      run: deploy_echo_service.sh
