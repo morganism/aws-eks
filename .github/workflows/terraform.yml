@@ -65,9 +65,6 @@ jobs:
         shell: bash
 
     steps:
-    # Check secrets value and only run if set
-    if: ${{ env.RUN_ACTIONS_WORKFLOW == 'true' }}
-
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
