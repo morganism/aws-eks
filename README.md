@@ -2,18 +2,17 @@
 
 [![GitHub Actions Demo](https://github.com/morganism/aws-eks/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/morganism/aws-eks/actions/workflows/github-actions-demo.yml)
 
-you need to have an IAM user with the appropriate permissions
+# ASSUMPTIONS
+- an Amazon account
+- an IAM user with appropriate permissions
+- [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- [Terraform cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+- [kubectl](https://kubernetes.io/docs/reference/kubectl/)
 
-@TODO 
- - add the minimal set of permissions, policies, roles, groups and whatever IAM setup is required
- - add the instructions for installing required software
-   - aws cli
-   - terraform cli
-   - kubectl
 
-Note: This set of [mainly] terraform files was taken from previous bespoke projects to 
-      launch special purpose VPCs or stacks. The Kubernetes portion is based on a proof of concept
-      to determine the cost and effort required to be Cloud agnostic by containerising 
-      a service running in the AWS cloud and porting it to GCP. 
+# Terraforn commands to provision an EKS cluster 
 
-      The resulting Frankencode is what you have here. 
+terraform init
+terraform plan -out terraform.plan
+terraform apply "terraform.plan"
+
