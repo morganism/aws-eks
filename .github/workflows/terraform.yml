@@ -44,7 +44,7 @@
 
 name: 'Terraform'
 
-on: [push]
+on: [workflow_dispatch, push]
 
 permissions:
   contents: read
