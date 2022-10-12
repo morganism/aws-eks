@@ -10,9 +10,9 @@
 - [kubectl](https://kubernetes.io/docs/reference/kubectl/)
 
 
-# Terraforn commands to provision an EKS cluster 
+# Terraform commands to provision an EKS cluster 
 
-terraform init
-terraform plan -out terraform.plan
-terraform apply "terraform.plan"
+- terraform init
+- terraform plan -out terraform.plan
+- terraform apply "terraform.plan"
 
