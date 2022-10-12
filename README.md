@@ -6,7 +6,7 @@
 
 # ASSUMPTIONS
 - an Amazon account
-- an IAM user with appropriate permissions
+- an IAM user with appropriate permissions : see 'iam_permissions' for permissions used (i did not specify the minimal set)
 - [AWS cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [Terraform cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - [kubectl](https://kubernetes.io/docs/reference/kubectl/)
