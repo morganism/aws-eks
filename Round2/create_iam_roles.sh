@@ -12,6 +12,10 @@ aws iam create-role \
   --output text \
   --query 'Role.Arn'
 
+aws iam --generate-cli-skeleton attach-role-policy \
+  --role-name k8sAdmin \
+  --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+
 aws iam create-role \
   --role-name k8sDev \
   --description "Kubernetes developer role (for AWS IAM Authenticator for Kubernetes)." \
